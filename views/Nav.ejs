@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
 
+        
+
+        .navbar-brand img {
+            max-width: 5%; /* 이미지의 최대 너비를 부모 요소의 너비에 맞게 설정합니다. */
+            max-height: 5%; /* 이미지의 최대 높이를 부모 요소의 높이에 맞게 설정합니다. */
+        }
+
+        /*핸드폰 크기*/
+        @media screen and (max-width: 768px) {
+            .navbar-brand {
+                display: none
+            }
+        }
+
+
+    </style>
 </head>
 <body>
     
@@ -15,17 +32,22 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Navbar</a>
+
+            <!-- 연고 로고 -->
+            <a class="navbar-brand" href="#"> 
+                <img src = "https://cdn-icons-png.flaticon.com/512/6722/6722298.png"> 
+            </a>
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#"> 📮 빠른 상담 </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#"> 📅 상담 예약 </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" aria-disabled="true"> 🔐 Mypage </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
